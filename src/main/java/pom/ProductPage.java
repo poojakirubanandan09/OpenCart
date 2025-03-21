@@ -71,6 +71,8 @@ public class ProductPage extends BasePage {
     
     public void moveToCheckout() {
     	driver.findElement(cartButton).click();
+	    
+	waitForElementToBeClickable(checkoutLink);    
     	driver.findElement(checkoutLink).click();
     }
     
